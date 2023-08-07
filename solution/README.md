@@ -10,7 +10,9 @@ Para instalar o pipeline, você precisará instalar as seguintes dependências:
 * Docker
 * Depois de instalar as dependências, você pode clonar o repositório e executar o pipeline usando o seguinte comando:
 
-''' docker-compose up -d '''
+```
+docker-compose up -d
+```
 
 
 ### Uso
