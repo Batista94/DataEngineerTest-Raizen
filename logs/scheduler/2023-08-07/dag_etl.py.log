@@ -1,0 +1,816 @@
+[2023-08-07T21:41:38.420+0000] {processor.py:157} INFO - Started process (PID=31) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:41:38.423+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:41:38.430+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:41:38.430+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:41:38.688+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:41:38.669+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 13, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 922, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1056, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1114, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2370, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2023-08-07T21:41:38.693+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:41:38.780+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.373 seconds
+[2023-08-07T21:42:09.076+0000] {processor.py:157} INFO - Started process (PID=89) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:42:09.078+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:42:09.083+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:42:09.083+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:42:09.147+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:42:09.133+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 13, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 922, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1056, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1114, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2370, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2023-08-07T21:42:09.148+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:42:09.188+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.120 seconds
+[2023-08-07T21:42:39.646+0000] {processor.py:157} INFO - Started process (PID=147) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:42:39.649+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:42:39.652+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:42:39.651+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:42:39.734+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:42:39.720+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 13, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 922, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1056, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1114, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2370, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2023-08-07T21:42:39.735+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:42:39.779+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.146 seconds
+[2023-08-07T21:43:10.608+0000] {processor.py:157} INFO - Started process (PID=206) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:43:10.611+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:43:10.614+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:43:10.613+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:43:10.685+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:43:10.671+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 13, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 922, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1056, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1114, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2370, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2023-08-07T21:43:10.686+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:43:10.732+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.133 seconds
+[2023-08-07T21:43:41.531+0000] {processor.py:157} INFO - Started process (PID=264) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:43:41.538+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:43:41.546+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:43:41.542+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:43:41.827+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:43:41.808+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 13, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 922, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1056, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1114, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2370, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2023-08-07T21:43:41.842+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:43:41.970+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.452 seconds
+[2023-08-07T21:44:12.756+0000] {processor.py:157} INFO - Started process (PID=325) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:44:12.759+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:44:12.763+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:44:12.762+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:44:12.845+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:44:12.829+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 13, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 922, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1056, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1114, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2370, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2023-08-07T21:44:12.847+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:44:12.907+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.165 seconds
+[2023-08-07T21:44:43.240+0000] {processor.py:157} INFO - Started process (PID=383) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:44:43.242+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:44:43.244+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:44:43.244+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:44:43.326+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:44:43.311+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 13, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 922, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1056, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1114, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2370, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2023-08-07T21:44:43.327+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:44:43.375+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.147 seconds
+[2023-08-07T21:45:13.857+0000] {processor.py:157} INFO - Started process (PID=442) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:45:13.860+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:45:13.863+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:45:13.863+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:45:13.933+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:45:13.919+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 13, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 922, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1056, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1114, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2370, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2023-08-07T21:45:13.934+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:45:13.975+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.128 seconds
+[2023-08-07T21:45:44.371+0000] {processor.py:157} INFO - Started process (PID=500) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:45:44.374+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:45:44.377+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:45:44.376+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:45:44.449+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:45:44.436+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 13, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 922, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1056, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1114, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2370, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2023-08-07T21:45:44.450+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:45:44.524+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.163 seconds
+[2023-08-07T21:46:14.630+0000] {processor.py:157} INFO - Started process (PID=558) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:46:14.633+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:46:14.635+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:46:14.634+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:46:14.694+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:46:14.680+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 13, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 922, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1056, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1114, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2370, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2023-08-07T21:46:14.694+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:46:14.730+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.106 seconds
+[2023-08-07T21:46:45.253+0000] {processor.py:157} INFO - Started process (PID=616) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:46:45.256+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:46:45.260+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:46:45.259+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:46:45.328+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:46:45.314+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 13, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 922, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1056, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1114, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2370, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2023-08-07T21:46:45.329+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:46:45.383+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.140 seconds
+[2023-08-07T21:47:15.797+0000] {processor.py:157} INFO - Started process (PID=674) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:47:15.801+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:47:15.814+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:47:15.807+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:47:16.038+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:47:15.987+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 13, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 922, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1056, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1114, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2370, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2023-08-07T21:47:16.050+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:47:16.149+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.384 seconds
+[2023-08-07T21:47:46.550+0000] {processor.py:157} INFO - Started process (PID=731) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:47:46.552+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:47:46.555+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:47:46.554+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:47:46.609+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:47:46.599+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 13, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 922, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1056, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1114, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2370, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2023-08-07T21:47:46.610+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:47:46.646+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.104 seconds
+[2023-08-07T21:48:17.051+0000] {processor.py:157} INFO - Started process (PID=789) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:48:17.054+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:48:17.056+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:48:17.055+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:48:17.117+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:48:17.104+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 13, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 922, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1056, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1114, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2370, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2023-08-07T21:48:17.118+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:48:17.154+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.109 seconds
+[2023-08-07T21:48:47.620+0000] {processor.py:157} INFO - Started process (PID=848) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:48:47.622+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:48:47.624+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:48:47.624+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:48:47.679+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:48:47.668+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 13, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 922, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1056, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1114, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2370, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2023-08-07T21:48:47.681+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:48:47.724+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.109 seconds
+[2023-08-07T21:49:18.527+0000] {processor.py:157} INFO - Started process (PID=905) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:49:18.530+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:49:18.532+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:49:18.531+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:49:18.595+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:49:18.580+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 13, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 922, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1056, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1114, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2370, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2023-08-07T21:49:18.597+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:49:18.642+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.122 seconds
+[2023-08-07T21:49:48.721+0000] {processor.py:157} INFO - Started process (PID=963) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:49:48.723+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:49:48.725+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:49:48.724+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:49:48.778+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:49:48.766+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 13, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 922, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1056, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1114, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2370, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2023-08-07T21:49:48.779+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:49:48.814+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.100 seconds
+[2023-08-07T21:50:19.037+0000] {processor.py:157} INFO - Started process (PID=1022) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:50:19.040+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:50:19.043+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:50:19.042+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:50:19.122+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:50:19.101+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 13, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 922, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1056, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1114, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2370, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2023-08-07T21:50:19.131+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:50:19.237+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.208 seconds
+[2023-08-07T21:50:49.375+0000] {processor.py:157} INFO - Started process (PID=1080) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:50:49.378+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:50:49.380+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:50:49.380+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:50:49.439+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:50:49.423+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 13, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 922, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1056, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1114, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2370, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2023-08-07T21:50:49.440+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:50:49.477+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.108 seconds
+[2023-08-07T21:51:19.667+0000] {processor.py:157} INFO - Started process (PID=1137) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:51:19.672+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:51:19.675+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:51:19.675+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:51:19.751+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:51:19.736+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 13, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 150, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 922, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1056, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1114, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2370, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2023-08-07T21:51:19.753+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:51:19.794+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.135 seconds
+[2023-08-07T21:51:22.495+0000] {processor.py:157} INFO - Started process (PID=1139) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:51:22.499+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:51:22.502+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:51:22.501+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:51:22.598+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:51:22.585+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 8, in <module>
+    start_date=datetime(2023, 8, 8),
+NameError: name 'datetime' is not defined
+[2023-08-07T21:51:22.602+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:51:22.646+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.167 seconds
+[2023-08-07T21:51:53.865+0000] {processor.py:157} INFO - Started process (PID=1197) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:51:53.882+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:51:53.892+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:51:53.891+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:51:54.071+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:51:54.019+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 8, in <module>
+    start_date=datetime(2023, 8, 8),
+NameError: name 'datetime' is not defined
+[2023-08-07T21:51:54.088+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:51:54.415+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.580 seconds
+[2023-08-07T21:52:25.125+0000] {processor.py:157} INFO - Started process (PID=1255) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:52:25.129+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:52:25.132+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:52:25.131+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:52:25.192+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:52:25.181+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 8, in <module>
+    start_date=datetime(2023, 8, 8),
+NameError: name 'datetime' is not defined
+[2023-08-07T21:52:25.196+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:52:25.245+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.131 seconds
+[2023-08-07T21:52:44.653+0000] {processor.py:157} INFO - Started process (PID=1287) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:52:44.655+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:52:44.659+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:52:44.658+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:52:44.802+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:52:44.790+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 9, in <module>
+    start_date=datetime(2023, 8, 8),
+TypeError: 'module' object is not callable
+[2023-08-07T21:52:44.807+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:52:44.882+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.236 seconds
+[2023-08-07T21:52:48.818+0000] {processor.py:157} INFO - Started process (PID=1304) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:52:48.822+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:52:48.825+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:52:48.824+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:52:48.972+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:52:48.951+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 9, in <module>
+    start_date=datetime(2023, 8, 8),
+TypeError: 'module' object is not callable
+[2023-08-07T21:52:48.980+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:52:49.052+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.244 seconds
+[2023-08-07T21:53:19.728+0000] {processor.py:157} INFO - Started process (PID=1362) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:53:19.732+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:53:19.736+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:53:19.735+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:53:19.813+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:53:19.802+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 9, in <module>
+    start_date=datetime(2023, 8, 8),
+TypeError: 'module' object is not callable
+[2023-08-07T21:53:19.818+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:53:19.881+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.170 seconds
+[2023-08-07T21:53:50.116+0000] {processor.py:157} INFO - Started process (PID=1420) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:53:50.118+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:53:50.121+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:53:50.120+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:53:50.171+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:53:50.160+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 9, in <module>
+    start_date=datetime(2023, 8, 8),
+TypeError: 'module' object is not callable
+[2023-08-07T21:53:50.176+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:53:50.225+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.116 seconds
+[2023-08-07T21:54:20.478+0000] {processor.py:157} INFO - Started process (PID=1478) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:54:20.480+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:54:20.483+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:54:20.482+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:54:20.535+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:54:20.523+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 9, in <module>
+    start_date=datetime(2023, 8, 8),
+TypeError: 'module' object is not callable
+[2023-08-07T21:54:20.540+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:54:20.588+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.120 seconds
+[2023-08-07T21:54:42.441+0000] {processor.py:157} INFO - Started process (PID=1509) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:54:42.443+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:54:42.445+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:54:42.445+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:54:42.528+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:54:42.518+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 20, in <module>
+    python_callable=transform_data,
+NameError: name 'transform_data' is not defined
+[2023-08-07T21:54:42.532+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:54:42.569+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.135 seconds
+[2023-08-07T21:54:44.047+0000] {processor.py:157} INFO - Started process (PID=1513) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:54:44.049+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:54:44.052+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:54:44.051+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:54:44.139+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:54:44.129+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 20, in <module>
+    python_callable=transform_data,
+NameError: name 'transform_data' is not defined
+[2023-08-07T21:54:44.142+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:54:44.177+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.136 seconds
+[2023-08-07T21:55:14.540+0000] {processor.py:157} INFO - Started process (PID=1571) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:55:14.542+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:55:14.544+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:55:14.543+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:55:14.599+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:55:14.589+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 20, in <module>
+    python_callable=transform_data,
+NameError: name 'transform_data' is not defined
+[2023-08-07T21:55:14.602+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:55:14.635+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.101 seconds
+[2023-08-07T21:55:45.458+0000] {processor.py:157} INFO - Started process (PID=1629) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:55:45.460+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:55:45.462+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:55:45.462+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:55:45.521+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:55:45.512+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 20, in <module>
+    python_callable=transform_data,
+NameError: name 'transform_data' is not defined
+[2023-08-07T21:55:45.524+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:55:45.556+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.102 seconds
+[2023-08-07T21:56:16.423+0000] {processor.py:157} INFO - Started process (PID=1695) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:56:16.426+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:56:16.429+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:56:16.429+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:56:16.492+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:56:16.482+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 20, in <module>
+    python_callable=transform_data,
+NameError: name 'transform_data' is not defined
+[2023-08-07T21:56:16.498+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:56:16.537+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.125 seconds
+[2023-08-07T21:56:47.426+0000] {processor.py:157} INFO - Started process (PID=1752) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:56:47.429+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:56:47.432+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:56:47.432+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:56:47.511+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:56:47.500+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 20, in <module>
+    python_callable=transform_data,
+NameError: name 'transform_data' is not defined
+[2023-08-07T21:56:47.514+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:56:47.547+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.133 seconds
+[2023-08-07T21:57:17.957+0000] {processor.py:157} INFO - Started process (PID=1810) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:57:17.959+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:57:17.961+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:57:17.961+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:57:18.018+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:57:18.007+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 20, in <module>
+    python_callable=transform_data,
+NameError: name 'transform_data' is not defined
+[2023-08-07T21:57:18.021+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:57:18.061+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.110 seconds
+[2023-08-07T21:57:45.069+0000] {processor.py:157} INFO - Started process (PID=1853) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:57:45.074+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:57:45.077+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:57:45.076+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:57:45.173+0000] {processor.py:836} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:57:45.487+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:57:45.487+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:etl_dag
+[2023-08-07T21:57:45.531+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:57:45.530+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:etl_dag
+[2023-08-07T21:57:45.555+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:57:45.555+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:etl_dag
+[2023-08-07T21:57:45.597+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:57:45.597+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-07T21:57:45.633+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:57:45.632+0000] {dag.py:2763} INFO - Creating ORM DAG for etl_dag
+[2023-08-07T21:57:45.660+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:57:45.660+0000] {dag.py:3508} INFO - Setting next_dagrun for etl_dag to 2023-08-08T00:00:00+00:00, run_after=2023-08-09T00:00:00+00:00
+[2023-08-07T21:57:45.715+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.656 seconds
+[2023-08-07T21:57:58.513+0000] {processor.py:157} INFO - Started process (PID=1890) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:57:58.515+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:57:58.517+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:57:58.516+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:57:58.596+0000] {processor.py:836} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:57:58.619+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:57:58.618+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-07T21:57:58.669+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:57:58.669+0000] {dag.py:3508} INFO - Setting next_dagrun for etl_dag to 2023-08-08T00:00:00+00:00, run_after=2023-08-09T00:00:00+00:00
+[2023-08-07T21:57:58.722+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.217 seconds
+[2023-08-07T21:58:29.109+0000] {processor.py:157} INFO - Started process (PID=1948) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:58:29.112+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:58:29.116+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:58:29.115+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:58:29.164+0000] {processor.py:836} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:58:29.207+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:58:29.206+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-07T21:58:29.278+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:58:29.277+0000] {dag.py:3508} INFO - Setting next_dagrun for etl_dag to 2023-08-08T00:00:00+00:00, run_after=2023-08-09T00:00:00+00:00
+[2023-08-07T21:58:29.320+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.216 seconds
+[2023-08-07T21:58:49.712+0000] {processor.py:157} INFO - Started process (PID=1983) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:58:49.715+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:58:49.719+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:58:49.718+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:58:49.907+0000] {processor.py:836} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:58:50.019+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:58:50.018+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-07T21:58:50.233+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:58:50.233+0000] {dag.py:3508} INFO - Setting next_dagrun for etl_dag to 2023-08-08T00:00:00+00:00, run_after=2023-08-09T00:00:00+00:00
+[2023-08-07T21:58:50.327+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.636 seconds
+[2023-08-07T21:59:20.811+0000] {processor.py:157} INFO - Started process (PID=2040) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:59:20.814+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:59:20.819+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:59:20.818+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:59:20.901+0000] {processor.py:836} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:59:20.997+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:59:20.996+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-07T21:59:21.107+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:59:21.106+0000] {dag.py:3508} INFO - Setting next_dagrun for etl_dag to 2023-08-08T00:00:00+00:00, run_after=2023-08-09T00:00:00+00:00
+[2023-08-07T21:59:21.177+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.375 seconds
+[2023-08-07T21:59:51.629+0000] {processor.py:157} INFO - Started process (PID=2098) to work on /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:59:51.631+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2023-08-07T21:59:51.633+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:59:51.633+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:59:51.682+0000] {processor.py:836} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/dag_etl.py
+[2023-08-07T21:59:51.725+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:59:51.725+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-07T21:59:51.778+0000] {logging_mixin.py:150} INFO - [2023-08-07T21:59:51.778+0000] {dag.py:3508} INFO - Setting next_dagrun for etl_dag to 2023-08-08T00:00:00+00:00, run_after=2023-08-09T00:00:00+00:00
+[2023-08-07T21:59:51.815+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.193 seconds
