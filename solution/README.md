@@ -3,14 +3,14 @@ Este repositório contém o código para um pipeline ETL que extrai dados de ven
 ### Instalação
 Para instalar o pipeline, você precisará instalar as seguintes dependências:
 
-Python 3.6+
-Pandas
-OpenPyXL
-Apache Airflow
-Docker
-Depois de instalar as dependências, você pode clonar o repositório e executar o pipeline usando o seguinte comando:
+* Python 3.6+
+* Pandas
+* OpenPyXL
+* Apache Airflow
+* Docker
+* Depois de instalar as dependências, você pode clonar o repositório e executar o pipeline usando o seguinte comando:
 
-docker-compose up -d
+''' docker-compose up -d '''
 
 
 ### Uso
